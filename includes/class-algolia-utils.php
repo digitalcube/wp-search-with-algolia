@@ -153,7 +153,9 @@ class Algolia_Utils {
 	public static function prepare_content( $content ) {
 		$content = self::remove_content_noise( $content );
 
-		return wp_strip_all_tags( $content );
+		// TODO: Update filter
+		// return wp_strip_all_tags( $content );
+		return $content;
 	}
 
 	/**
