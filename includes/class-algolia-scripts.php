@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Algolia_Scripts class file.
  *
@@ -13,7 +14,8 @@
  *
  * @since 1.5.0
  */
-class Algolia_Scripts {
+class Algolia_Scripts
+{
 
 	/**
 	 * Algolia_Scripts constructor.
@@ -21,8 +23,9 @@ class Algolia_Scripts {
 	 * @author WebDevStudios <contact@webdevstudios.com>
 	 * @since  1.5.0
 	 */
-	public function __construct() {
-		add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
+	public function __construct()
+	{
+		add_action('wp_enqueue_scripts', [$this, 'register_scripts']);
 	}
 
 	/**
@@ -31,11 +34,12 @@ class Algolia_Scripts {
 	 * @author WebDevStudios <contact@webdevstudios.com>
 	 * @since  1.5.0
 	 */
-	public function register_scripts() {
+	public function register_scripts()
+	{
 
 		$in_footer = Algolia_Utils::get_scripts_in_footer_argument();
 
-		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+		$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 
 		wp_register_script(
 			'algolia-search',
@@ -56,6 +60,7 @@ class Algolia_Scripts {
 				'jquery',
 				'underscore',
 				'wp-util',
+				'magic-wp-plugin'// TODO: hotfix
 			],
 			ALGOLIA_VERSION,
 			$in_footer
