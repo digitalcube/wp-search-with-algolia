@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:       WP Search with Algolia
- * Plugin URI:        https://github.com/WebDevStudios/wp-search-with-algolia
+ * Plugin Name:       Search
+ * Plugin URI:        https://github.com/digitalcube/wp-search-with-algolia
  * Description:       Integrate the powerful Algolia search service with WordPress
  * Version:           1.7.0
  * Requires at least: 5.0
  * Requires PHP:      7.2
- * Author:            WebDevStudios
- * Author URI:        https://webdevstudios.com
+ * Author:            DigitalCube
+ * Author URI:        https://digitalcube.jp
  * License:           GNU General Public License v2.0 / MIT License
  * Text Domain:       wp-search-with-algolia
  * Domain Path:       /languages
