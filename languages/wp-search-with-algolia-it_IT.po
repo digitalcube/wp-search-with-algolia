@@ -449,7 +449,7 @@ msgid "Correctly cleared index \"%s\"."
 msgstr "Indice \"%s\" pulito correttamente."
 
 #: includes/indices/class-algolia-searchable-posts-index.php:35
-msgid "All posts"
+msgid "Searchable posts"
 msgstr "Tutti gli articoli"
 
 #: includes/indices/class-algolia-users-index.php:14
