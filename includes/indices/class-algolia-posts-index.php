@@ -394,7 +394,7 @@ final class Algolia_Posts_Index extends Algolia_Index {
 	 * @return string
 	 */
 	public function get_id() {
-		return 'posts_' . $this->post_type;
+		return $this->post_type;
 	}
 
 	/**
